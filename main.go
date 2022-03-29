@@ -15,7 +15,7 @@ func main() {
 }
 
 func heartbeat(w http.ResponseWriter, r *http.Request) {
-	m := Response{"success"}
+	m := Response{"200"}
 	json, _ := json.Marshal(m)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(json)
