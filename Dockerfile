@@ -6,14 +6,12 @@ COPY . .
 
 ENV PORT 8080 
 
-RUN go build
+RUN go build -o GoTestDrone
 
 FROM alpine
 
 WORKDIR /app
 
 COPY --from=builder /app/GoTestDrone /app/
-
-RUN apk add --no-cache bash
 
 CMD ["./GoTestDrone"]
