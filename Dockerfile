@@ -6,7 +6,7 @@ COPY . .
 
 ENV PORT 8080 
 
-RUN go build -o GoTestDrone
+RUN CGO_ENABLED=0 go build -o GoTestDrone
 
 FROM alpine
 
