@@ -1,4 +1,4 @@
 # GoTestDrone
 
 # Introduction 
-&emsp;&emsp;用Drone架設CI的pipeline。
+用來測試Drone server的測試專案。
